@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jobs.css">
+    <script src="https://kit.fontawesome.com/c09129db3e.js" crossorigin="anonymous"></script>
     <title>Jobs | ProgrammHer</title>
 </head>
 <body>
@@ -12,15 +13,16 @@
     <div class="super-container">
         <div class="filter-btns">
             <form action="">
-                <button class="fileter-btn"></button>
-                <button class="fileter-btn"></button>
-                <button class="fileter-btn"></button>
-                <button class="fileter-btn"></button>
-                <button class="fileter-btn"></button>
-                <button class="fileter-btn"></button>
-                <button class="all-filters-btn"></button>
-                <button class="reset-btn"></button>
+                <button class="fileter-btn">Location</button>
+                <button class="fileter-btn">Job Type</button>
+                <button class="fileter-btn">Job Role</button>
+                <button class="fileter-btn" id="exp">Experience Level</button>
+                <button class="fileter-btn">Date Posted</button>
+                <button class="all-filters-btn">All filters</button>
+                <span class="separator">|</span>
+                <button class="reset-btn">Reset</button>
             </form>
+            <hr>
         </div>
         <div class="container">
             <section class="list-container">
@@ -56,10 +58,11 @@
                 <div class="uppper-container">
                     <span class="job-title">Python Developer</span>
                     <ul class="job-summary">
-                        <li>San Jose</li>
-                        <li>Full Time</li>
-                        <li>$45 per hour</li>
-                        <li>Application Deadline: June 22 2022</li>
+                        <li id="company-name">Intel</li>
+                        <li><i class="far fa-compass"></i></i><span>San Jose</span></li>
+                        <li><i class="fas fa-briefcase"></i><span>Full Time</span></li>
+                        <li><i class="fas fa-coins"></i></i><span>$45 per hour</span></li>
+                        <li id="deadline">Application Deadline: June 22 2022</li>
                     </ul>
                     <button class="apply-btn">Apply</button>
                 </div>
